@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monkey Poker</title>
+
+    <meta name="description" content="Experience the thrill of high-stakes entertainment at our premier casino. Explore a world of captivating games, from classic table favorites to cutting-edge slots. Win big and indulge in luxurious experiences, all in a secure and responsible gaming environment. Join us for an unforgettable gaming journey at Monkey Poker. Your luck and fortune await.">
+    <meta name="keywords" content="casino games, slots, poker, blackjack, table games, betting, gambling, high stakes">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Kumbh+Sans:wght@400;700&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="language-buttons">
+            <button class="language-button" id="english" onclick="changeLanguageAndLoad('mne')"></button>
+            <button class="language-button" id="montenegrin"onclick="changeLanguageAndLoad('en')"></button>
+        </div>
+
+        <div class="registration-wrapper">
+
+            <div class="circle-frame">
+                <img src="assets/images/userimage.png" alt="">
+            </div>
+
+            <div class="registration-form">
+<br>
+                <h1 id="formHeaderLabel">Registration form</h1>
+
+                <form id="form">
+                    <div class="fields">
+
+                        <div class="input-wrapper">
+                            <label for="firstName" id="firstNameLabel" >First Name:</label>
+                            <input type="text" id="first-name" placeholder="Enter your first name" name="firstName" >
+                            <span id="firstnameError" class="error"></span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="lastName" id="lastNameLabel" >Last Name:</label>
+                            <input type="text" id="last-name" placeholder="Enter your last name" name="lastName" >
+                            <span id="lastnameError" class="error"></span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="email" id="emailLabel" >Email:</label>
+                            <input type="email" id="email" placeholder="Enter your email"  name="email" >
+                            <span id="emailError" class="error"></span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="username" id="usernameLabel" >Username:</label>
+                            <input type="text" id="username" placeholder="Enter your username"  name="username" >
+                            <span id="usernameError" class="error"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-wrapper">
+                                <label for="password" id="passwordLabel" >Password:</label>
+                                <input type="password" id="password" placeholder="Enter your password"  name="password" >
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="passwordConfirm" id="confirmPasswordLabel" >Confirm password:</label>
+                                <input type="password" id="password-confirm" placeholder="Confirm your password"  name="passwordConfirm" >
+                            </div>
+                        
+                            <span id="passwordMatchError" class="error"></span>
+                            
+                        </div>
+
+                        <div class="checkbox-terms">
+                            <input type="checkbox" id="terms-and-conditions" name="termsAndConditions" required>
+                            <label for="termsAndConditions" ><a href="assets/TERMS OF SERVICE.pdf" target="_blank" id="termsLabel">I accept Terms and Conditions</a></label>
+                        </div>
+
+                    </div>
+
+                    <button id="register" onclick="validateForm()" >Register</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="successMessage" style="display: none;">
+        <p>You have successfully registered!</p>
+    </div>
+
+    <script src="assets/script.js"></script>
+
+</body>
+
+</html>

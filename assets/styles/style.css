@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url(../images/background1.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.container .registration-wrapper {
+    margin-top: -150px;
+}
+
+.container .circle-frame {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    border: 2px solid black;
+    position: relative;
+    top: 130px;
+    left: 66%;
+}
+.container .circle-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+}
+.container .language-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.language-button {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: .7s;
+    margin-top: 20px;
+}
+
+#english:hover,
+#montenegrin:hover {
+    transform: rotateY(-360deg);
+}
+
+#english {
+    background-image: url(../images/buttoneng.png);
+    background-size: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 15px;
+}   
+
+#montenegrin {
+    background-image: url(../images/buttonmne.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+}   
+
+.container .registration-form {
+    background-color: #fff;
+    position: relative;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 18px 15px 20px rgb(210 210 210 / 80%);
+    width: 100%;
+    margin-left: 55%;
+    margin-top: 70px;
+    max-height: 1500px;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+    
+}
+
+.container .registration-form h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #0f1f5f;
+    font-family: 'Work Sans', sans-serif;
+    padding: 30px 10px;
+    white-space: nowrap;
+    background-color: #ffe525;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container .registration-form form {
+    position: relative;
+    height: 680px;
+    margin-top: 20px;
+}
+
+span {
+    color: rgb(183, 36, 36);
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+   
+.container .registration-form form .fields {
+    margin-left: 10px;
+}
+
+.container .registration-form form .fields .input-wrapper label {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #212226;
+  }
+  
+.container .registration-form form .fields .input-wrapper input[type="text"],
+input[type="email"] {
+    width: 94%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 5px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #efefef;
+  }
+
+.container .registration-form form .fields .checkbox-terms {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom:40px ;
+    color: #162a57;
+}
+
+.container .registration-form form .fields .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 94%;
+}
+
+.container .registration-form form .fields .input-group input[type="password"] {
+    width: auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 5px;
+    height: 50px;
+    margin-bottom: 10px;
+    width: 290px;
+    display: flex;
+    background-color: #efefef;
+}
+
+.container .registration-form form #register {
+    margin-left: 240px;
+    margin-bottom: 20px;
+    padding: 15px 45px;
+    background-color: #11345a;
+    color: #fff;
+    border: azure;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s linear(0 0%, 1 100%);
+    font-family: 'Bricolage Grotesque', sans-serif;
+    text-transform: uppercase;
+    margin-top: -10px;
+  }
+
+.container .registration-form form #register:hover {
+    background-color: #37597e;
+  }
+
+
+
+
+
+
+
